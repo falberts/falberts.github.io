@@ -8,6 +8,6 @@ function initTypeWrite() {
     for (let i = 0; i < text.length; i++) {
         setTimeout(() => {
             element.append(text[i])
-        }, i * 20)
+        }, i * 15)
     }
 }

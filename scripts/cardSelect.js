@@ -1,12 +1,5 @@
 function initCardSelect() {
 
-  const projectInfo = {
-    bachelorThesis: {
-      fullTitle: "TESTTITLE",
-      info: "Test info",
-    }
-  };
-
   const cards = document.querySelectorAll('.card');
   const detail = document.getElementById('project-detail');
   const content = detail.querySelector('.detail-content');
@@ -61,8 +54,6 @@ function initCardSelect() {
       selectedCard = card;
       card.classList.add('active');
 
-      const title = card.querySelector('h2')?.innerText;
-
       const cardTop = card.offsetTop;
       const rowCards = [...cards].filter(c => c.offsetTop === cardTop);
       const lastCard = rowCards[rowCards.length - 1];
@@ -75,8 +66,20 @@ function initCardSelect() {
 
       content.innerHTML = `
         ${cardDetails || 
-          `<h1>PROJECT DETAILS</h1>
-          <p>No project details found.</p>`}
+          `
+          <div>
+            <div class="details-container">
+              <div class="details-info">
+                <h1>PROJECT</h1>
+                <p>
+                  Item not found.
+                </p>
+              </div>
+              <div class="details-media">
+              </div>
+            </div>
+          </div>
+          `}
       `;
 
       detail.classList.add('active');

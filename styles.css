@@ -60,6 +60,10 @@ li, li *{
   padding: 1rem;
 }
 
+#about-me-text {
+  font-size: 1.2rem;
+}
+
 #about-me-img {
   order: -1;
 }
@@ -440,7 +444,7 @@ footer {
   }
 
   #about-me {
-    min-height: 22rem;
+    min-height: 25rem;
   }
 
   #about-me > div {
