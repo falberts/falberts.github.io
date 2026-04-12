@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
+  initTypeWrite();
+  initCardSelect();
   initSkillsTooltip();
   initSkillBarsAnimation()
 });

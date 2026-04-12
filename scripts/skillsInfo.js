@@ -4,7 +4,7 @@ function initSkillsTooltip() {
   const skillsInfo = {
     "skills-python": {
       name: "Python",
-      description: "Placeholder"
+      description: "Python was my first introduction to programming; I have used it to implement game logic when making small games in the Blender game engine (when it was still available) around 2015-2016, in addition to visual node-based programming. After this, I hadn't used it again until the start of my studies in 2020. I am now most confident in my ability to program in Python, as it is the programming language I have used the most, both in my studies and spare time."
     },
     "skills-bash": {
       name: "Bash",
@@ -27,7 +27,7 @@ function initSkillsTooltip() {
         description: "Placeholder"
     },
     "skills-mysql": {
-        name: "MySQL",
+        name: "(My)SQL",
         description: "Placeholder"
     },
     "skills-typescript": {
@@ -36,6 +36,10 @@ function initSkillsTooltip() {
     },
     "skills-angular": {
         name: "Angular",
+        description: "Placeholder"
+    },
+    "skills-r": {
+        name: "R",
         description: "Placeholder"
     },
     "skills-prolog": {
@@ -50,8 +54,8 @@ function initSkillsTooltip() {
         name: "Java",
         description: "Placeholder"
     },
-    "skills-spring": {
-        name: "Spring",
+    "skills-docker": {
+        name: "Docker",
         description: "Placeholder"
     },
     "skills-laravel": {

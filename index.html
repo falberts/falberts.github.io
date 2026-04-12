@@ -2,151 +2,324 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Personal Portfolio</title>
+    <title>Portfolio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="./styles.css">
-    
-    <script src="./scripts/skillsInfo.js"></script>
+
+    <script src="./scripts/typeWrite.js"></script>
+    <script src="./scripts/cardSelect.js"></script>
     <script src="./scripts/skillsBars.js"></script>
+    <script src="./scripts/skillsInfo.js"></script>
     <script src="./scripts/main.js"></script>
   </head>
   <body>
-    <div class="navbar-container">
-      <div class="navbar-left">
-        <a href="https://github.com/falberts" target="_blank" class="navbar-item navbar-icon">
-          <i class="devicon-github-original"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/floralberts/" target="_blank" class="navbar-item navbar-icon">
-          <i class="devicon-linkedin-plain"></i>
-        </a>
-        <a href="#about-me" class="navbar-item">
-          <span>About me</span>
-        </a>
-        <a href="#personal-projects" class="navbar-item">
-          <span>Personal projects</span>
-        </a>
-        <a href="#skills" class="navbar-item">
-          <span>Skills</span>
-        </a>
-        <a href="#education" class="navbar-item">
-          <span>Education</span>
-        </a>
-        
-      </div>
-      <div class="navbar-right">
-        <div id="navbar-language-select">
-          <a href="./index_nl.html"><span class="fi fi-nl fis language-flag"></span></a>
-          <a href=""><span class="fi fi-gb fis language-flag"></span></a>
-        </div>
-      </div>
-    </div>
+    <div id="about-me">
+      <div>
+        <div id="about-me-info">
 
-    <div class="content">
-
-      <div id="about-me">
-
-        <h1 class="section-title">About me</h1>
-
-      </div>
-
-      <div id="personal-projects">
-
-        <div class="transition"></div>
-        
-        <h1 class="section-title">Personal projects</h1>
-
-        <div id="milkyway-of-music" class="dark-mode-content">
-          <div class="project-container container-1">
-            <div class="project-main-content main-content-1">
-              <div class="video-container">
-                <video class="project-video" src="./video/milkyway_of_music.mp4" autoplay muted loop></video>
-                <div class="main-content-info gradient dark-right left-align">
-                  <h2>Milkyway of Music</h2>
-                  <div class="links">
-                    <h3>Links:</h3>
-                    <ul>
-                      <li>
-                        <a href="https://github.com/falberts/Milkyway-of-Music" target="_blank"><i class="devicon-github-original"></i> GitHub Repository</a>
-                      </li>
-                      <li>
-                        <a href="https://falberts.github.io/Milkyway-of-Music/" target="_blank"><i class="devicon-githubactions-plain"> </i>GitHub Pages</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project-info info-1">
-              <h3>Description:</h3>
-              <p>Web app visualizing musical artists as stars in a 3D galaxy. Similar artists are (very roughly) clustered together. For each artist, their bio, links to popular music platforms, user tags and top ten similar artists can be accessed in a pop-up sidebar.</p>
-            </div>
-            <div class="project-stack stack-1">
-              <div class="icons">
-                <i class="devicon-html5-plain colored" title="HTML 5"></i>
-                <i class="devicon-css3-plain colored" title="CSS 3"></i>
-                <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-                <i class="devicon-threejs-original" title="three.js"></i>
-                <i class="devicon-python-plain colored" title="Python 3"></i>
-                <i class="devicon-git-plain colored" title="Git"></i>
-                <i class="devicon-github-original" title="GitHub"></i>
-              </div>
-            </div>
+          <div>
+            <h1>FLOR ALBERTS</h1>
+            <p id="about-me-text" class="hidden">
+              I am a programmer who builds technical solutions at the intersection of data, language, and user experience. Having both a theoretical understanding as well as hands on experience with numeral subjects such as machine learning, web development, database management and (computational) linguistics, I have worked on solutions that tranform complex information into practical tools that address real-world problems. 
+            </p>
           </div>
         </div>
 
-        <div class="transition dark-light"></div>
+        <div id="about-me-img"> 
+          <img src="media/gh_img.jpeg">
+        </div>
 
-        <div id="milkyway-of-music2" class="light-mode-content">
-          <div class="project-container container-2">
-            <div class="project-main-content main-content-2">
-              <div class="img-container">
-                <div class="main-content-info gradient light-left right-align">
-                  <h2>Project</h2>
-                  <div class="links">
-                    <h3>Links:</h3>
-                    <ul>
-                      <li>
-                        <a href="" target="_blank"><i class="devicon-github-original"></i> GitHub Repository</a>
-                      </li>
-                      <li>
-                        <a href="" target="_blank"><i class="devicon-githubactions-plain"> </i>GitHub Pages</a>
-                      </li>
-                    </ul>
-                  </div>
+      </div>
+    </div>
+    <div id="navbar">
+      <a href="#projects">PROJECTS</a>
+      <a href="#education">EDUCATION</a>
+      <a href="#skills">SKILLS</a>
+      <a href="https://github.com/falberts" target="_blank" class="navbar-item navbar-icon"><i class="devicon-github-original"></i></a>
+      <a href="https://www.linkedin.com/in/floralberts/" target="_blank" class="navbar-item navbar-icon"><i class="devicon-linkedin-plain"></i></a>
+    </div>
+
+    <div id="content">
+
+      <div id="projects" class="section">
+        <h1>PROJECTS</h1>
+        <h4>CLICK TO FIND OUT MORE</h4>
+        <div class="grid">
+
+          <div class="card" id="tweet-emotion-classifier">
+            <h5>ASSIGNMENT</h5>
+            <h3>TWEET EMOTION CLASSIFIER</h3>
+            <h5>2021</h5>
+            <h4>PREDICTS THE SENTIMENT OF A GIVEN SET OF TWEETS</h2>
+              <div class="project-stack">
+                <div class="icons">
+                  <i class="devicon-python-plain colored" title="Python 3"></i>
+                  <i class="devicon-bash-plain" title="Bash"></i>
+                  <i class="devicon-git-plain colored" title="Git"></i>
+                  <i class="devicon-github-original" title="GitHub"></i>
                 </div>
               </div>
             </div>
-            <div class="project-info info-2">
-              <h3>Description:</h3>
-              <p>Project info...</p>
+            
+            <div class="card" id="screenplay-parser">
+            <h5>FINAL PROJECT</h5>
+            <h3>SCREENPLAY PARSER</h3>
+            <h5>2021</h5>
+            <h4>LABELS LINES IN A SCREENPLAY (SCENES, CHARACTER DIALOGUES, ETC.) USING REGULAR EXPRESSIONS</h2>
+              <div class="project-stack">
+                <div class="icons">
+                  <i class="devicon-python-plain colored" title="Python 3"></i>
+                  <i class="devicon-bash-plain" title="Bash"></i>
+                  <i class="devicon-git-plain colored" title="Git"></i>
+                  <i class="devicon-github-original" title="GitHub"></i>
+                </div>
+              </div>
             </div>
-            <div class="project-stack stack-2">
-              <div class="icons">
+            
+            <div class="card" id="news-website">
+            <h5>ASSIGNMENT</h5>
+            <h3>REAL-TIME NEWS WEBSITE</h3>
+            <h5>2022</h5>
+            <h4>REAL-TIME RESPONSIVE NEWS WEBSITE</h2>
+              <div class="project-stack">
+                <div class="icons">
+                  <i class="devicon-php-plain colored" title="PHP"></i>
+                  <i class="devicon-mysql-original colored" title="(My)SQL"></i>
+                  <i class="devicon-html5-plain colored" title="HTML 5"></i>
+                  <i class="devicon-css3-plain colored" title="CSS 3"></i>
+                  <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                  <i class="devicon-git-plain colored" title="Git"></i>
+                  <i class="devicon-github-original" title="GitHub"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card" id="series-db">
+              <h5>ASSIGNMENT</h5>
+              <h3>CRUD WEB INTERFACE</h3>
+              <h5>2022</h5>
+              <h4>SYSTEM FOR TRACKING (TV) SERIES</h2>
+                <div class="project-stack">
+                  <div class="icons">
+                    <i class="devicon-php-plain colored" title="PHP"></i>
+                    <i class="devicon-mysql-original colored" title="(My)SQL"></i>
+                    <i class="devicon-html5-plain colored" title="HTML 5"></i>
+                    <i class="devicon-css3-plain colored" title="CSS 3"></i>
+                    <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                    <i class="devicon-git-plain colored" title="Git"></i>
+                    <i class="devicon-github-original" title="GitHub"></i>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card" id="connect-four">
+                <h5>FINAL PROJECT</h5>
+                <h3>ASYNC. BROWSER MULTIPLAYER GAME</h3>
+                <h5>2022</h5>
+                <h4>CONNECT FOUR</h2>
+                  <div class="project-stack">
+                    <div class="icons">
+                      <i class="devicon-php-plain colored" title="PHP"></i>
+                      <i class="devicon-mysql-original colored" title="(My)SQL"></i>
+                      <i class="devicon-html5-plain colored" title="HTML 5"></i>
+                      <i class="devicon-css3-plain colored" title="CSS 3"></i>
+                      <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                      <i class="devicon-git-plain colored" title="Git"></i>
+                      <i class="devicon-github-original" title="GitHub"></i>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="card" id="qa-system">
+                  <h5>FINAL PROJECT</h5>
+                  <h3>SEMANTIC Q&A SYSTEM</h3>
+                  <h5>2023</h5>
+                  <h4>WIKIDATA BASED INFORMATION RETRIEVAL SYSTEM FOR VIDEO-GAME RELATED QUESTIONS</h2>
+                    <div class="project-stack">
+                      <div class="icons">
+                        <i class="devicon-python-plain colored" title="Python 3"></i>
+                        <i class="devicon-git-plain colored" title="Git"></i>
+                        <i class="devicon-github-original" title="GitHub"></i>
+                      </div>
+              </div>
+            </div>
+            
+            <div class="card thesis" id="bachelor-thesis">
+              <h3>BACHELOR THESIS</h3>
+              <h5>2024</h5>
+              <h5>GRADE: 8.0</h5>
+              <h4>UTILIZING LARGE LANGUAGE MODELS FOR QUALITY BASED SUMMARIZATION OF BIOMEDICAL LITERATURE</h4>
+              <div class="project-stack">
+                <div class="icons">
+                  <i class="devicon-python-plain colored" title="Python 3"></i>
+                  <i class="devicon-bash-plain" title="Bash"></i>
+                  <i class="devicon-git-plain colored" title="Git"></i>
+                  <i class="devicon-github-original" title="GitHub"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card shared-task" id="mu-shroom">
+              <h5>LARGE PROJECT</h5>
+              <h3>SHARED TASK SUBMISSION - SEMEVAL 2025</h3>
+              <h5>2025</h5>
+              <h4>SUBMISSION FOR THE MU-SHROOM LLM HALLUCINATION DETECTION TASK</h4>
+              <div class="project-stack">
+                <div class="icons">
+                  <i class="devicon-python-plain colored" title="Python 3"></i>
+                  <i class="devicon-jupyter-plain" title="Jupyter"></i>
+                  <i class="devicon-git-plain colored" title="Git"></i>
+                  <i class="devicon-github-original" title="GitHub"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card" id="abusive-language-detection">
+              <h5>FINAL PROJECT</h5>
+              <h3>ABUSIVE & OFFENSIVE LANGUAGE DETECTION</h3>
+              <h5>2025</h5>
+              <h4>DETECTION OF HARMFUL LANGUAGE USING SEVERAL MACHINE LEARNING STRATEGIES</h4>
+              <div class="project-stack">
+                <div class="icons">
+                  <i class="devicon-python-plain colored" title="Python 3"></i>
+                  <i class="devicon-jupyter-plain" title="Jupyter"></i>
+                  <i class="devicon-git-plain colored" title="Git"></i>
+                  <i class="devicon-github-original" title="GitHub"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card thesis" id="master-thesis">
+              <h3>MASTER THESIS</h3>
+              <h5>2026</h5>
+              <h5>GRADE: 7.0</h5>
+              <h4>ADAPTING A STATE-OF-THE-ART FINE GRAINED ENTITY LINKING MODEL FOR DUTCH</h4>
+              <div class="project-stack">
+                <div class="icons">
+                  <i class="devicon-python-plain colored" title="Python 3"></i>
+                  <i class="devicon-bash-plain" title="Bash"></i>
+                  <i class="devicon-git-plain colored" title="Git"></i>
+                  <i class="devicon-github-original" title="GitHub"></i>
+                </div>
+              </div>
+            </div>
+            
+          <div class="card personal" id="milkyway-of-music">
+            <h5>PERSONAL PROJECT</h5>
+            <h3>MILKYWAY OF MUSIC</h3>
+            <h5>2026</h5>
+            <h4>WEB APP VISUALIZING MUSICAL ARTISTS AND GROUPS AS STARS IN A 3D GALAXY</h2>
+              <div class="project-stack">
+                <div class="icons">
+                  <i class="devicon-html5-plain colored" title="HTML 5"></i>
+                  <i class="devicon-css3-plain colored" title="CSS 3"></i>
+                  <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                  <i class="devicon-threejs-original" title="three.js"></i>
+                  <i class="devicon-python-plain colored" title="Python 3"></i>
+                  <i class="devicon-git-plain colored" title="Git"></i>
+                  <i class="devicon-github-original" title="GitHub"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card personal" id="kanban-board">
+              <h5>PERSONAL PROJECT</h5>
+              <h3>KANBAN BOARD APP</h3>
+              <h5>2026</h5>
+              <h4>PRODUCTIVITY TOOL SIMILAR TO TRELLO</h2>
+                <div class="project-stack">
+                  <div class="icons">
+                <i class="devicon-php-plain colored" title="PHP"></i>
                 <i class="devicon-html5-plain colored" title="HTML 5"></i>
                 <i class="devicon-css3-plain colored" title="CSS 3"></i>
                 <i class="devicon-typescript-plain colored" title="TypeScript"></i>
-                <i class="devicon-react-original colored" title="React"></i>
-                <i class="devicon-nextjs-plain colored" title="Next.js"></i>
-                <i class="devicon-php-plain colored" title="PHP"></i>
-                <i class="devicon-laravel-original colored" title="Laravel"></i>
+                <i class="devicon-react-plain colored" title="React"></i>
+                <i class="devicon-laravel-plain colored" title="Laravel"></i>
                 <i class="devicon-git-plain colored" title="Git"></i>
                 <i class="devicon-github-original" title="GitHub"></i>
               </div>
             </div>
           </div>
+
+        </div>
+
+        <div id="project-detail">
+          <button class="close-btn">&times;</button>
+          <div class="detail-content"></div>
+        </div>
+
+      </div>
+
+      <div id="education" class="section">
+        <h1>EDUCATION</h1>
+
+        <div>
+          <h3>BACHELOR - INFORMATION SCIENCE</h3>
+          <h4 class="subtitle">UNIVERSITY OF GRONINGEN | 2020 - 2024</h4>
+          <p>
+            During my bachelor's, I built a broad and interdisciplinary foundation that combined <span class="text-highlight">computer science, linguistics, and data analysis</span>.
+            I started by developing a solid understanding of core computer science principles such <span class="text-highlight">algorithms, abstraction, data storage, networking, and logical operations</span>, among other topics. 
+            By learning to program in <span class="text-highlight">Python</span> as well as becoming familiar with the <span class="text-highlight">command line</span> and writing shell scripts, I gradually became familiar with key concepts in programming, as well as learning to write legible code.
+            Alongside this, I took courses in <span class="text-highlight">linguistics</span>. Here, I analyzed sentence structure and learned about different types of sentence contstructions and patterns.
+          </p>
+          <p>
+            Following this, I learned more about performing <span class="text-highlight">data analysis and visualizing data</span>. Additionally, I learned how to properly interpret and present results based on data by gaining a solid grasp of statistics and clear reporting practices.
+          </p>
+          <p>
+            Much of my bachelor's was centered around the principles of <span class="text-highlight">artificial intelligence and machine learning</span>. This includes building a solid grasp of the <span class="text-highlight">mathematical foundations</span> underlying these methods, as well as working with a variety of <span class="text-highlight">classical classification approaches</span> such as logistic regression, k-nearest neighbor (KNN), support vector machines (SVM), decision trees, random forests and Naïve Bayes. 
+            I also gained hands-on experience with <span class="text-highlight">neural networks</span>, such as <span class="text-highlight">feed-forward neural networks (FFNNs) and recurrent neural networks (RNNs)</span> for sequence processing, particularly for handling problems in the domain of <span class="text-highlight">Natural Language Processing (NLP)</span>. In doing so, I became familiar with widely used Python libraries like Scikit-learn, Keras, and PyTorch.
+          </p>
+          <p>
+            Additionally, I developed practical skills in <span class="text-highlight">web technology</span>, focusing on creating responsive, modular, and intuitive designs. Projects included building a responsive news website and developing an asynchrnonous browser game (Connect Four). 
+            Through these projects I was introduced to key concepts such as <span class="text-highlight">MVC architecture, routing, API implementation, and database interaction</span>.
+          </p>
+          <p>
+            Around this time, I also learned about <span class="text-highlight">database management and design</span>. I learned how to <span class="text-highlight">design efficient database schemas, create and interpret ER diagrams, normalize databases using several normal forms, and implement CRUD operations</span>. 
+            My studies also included <span class="text-highlight">computational linguistics</span> and <span class="text-highlight">language technology</span>, where I explored parsing techniques and the intersection of language and computation. Additionally, I took part in courses on <span class="text-highlight">digital humanities, information security and encryption, machine translation, and the ethics of AI and NLP</span>. This broadened my understanding of the impact of AI tools in societal contexts, and on the ethical implications. 
+          </p>
+
+          <h4>MINOR: NEUROSCIENCE</h4>
+
+          <p>
+            PLACEHOLDER TEXT
+          </p>
+
+        </div>
+
+        <div>
+          <h3>MASTER - COMMUNICATION AND INFORMATION STUDIES</h3>
+          <h3>(TRACK INFORMATION SCIENCE)</h3>
+          <h4 class="subtitle">UNIVERSITY OF GRONINGEN | 2024 - 2026</h4>
+          <p>
+            During my master's, I deepened my understanding of the principles behind artificial intelligence. In particular, I gained more insight into the inner workings of the <span class="text-highlight">Transformer</span> architecture. 
+            This included learning about key mechanisms such as <span class="text-highlight">gradient descent, gating, and (self)-attention mechanisms</span>, primarily using hands-on coding exercises. 
+          </p>
+          <p>
+            A central theme of my master's was working with <span class="text-highlight">(open-source) Large Language Models</span>, and improving the reliability of their outputs. I explored <span class="text-highlight">retrieval-augmented generation (RAG)</span> techniques, focusing on efficient and factual information retrieval using public knowledge bases. 
+            As part of a semester-long research project, I participated in the <span class="text-highlight">SemEVAL-2025 shared task on hallucination detection (Mu-SHROOM)</span>, where I worked on developing an efficient <span class="text-highlight">RAG component</span> for fact-checking statements generated by LLMs. 
+          </p>
+          <p>
+            Additionally, I participated in courses on <span class="text-highlight">semantic web technologies</span>, learning how to represent and query structured knowledge using RDF triples and Turtle syntax, and how to work with <span class="text-highlight">graph-based data</span>. 
+          </p>            
+          <p>
+            I also followed courses on the <span class="text-highlight">societal impact of computer-mediated communication</span>. Here, I studied and analyzed social media discourse around sensitive topics such as discrimination and racism. 
+          </p>
+          <p>
+            Furthermore, I explored <span class="text-highlight">computational semantics</span>. This includes <span class="text-highlight">logic and inference, meaning representations, compositionality, and lexical semantics</span>. This provided me with an understanding of how meaning can be modeled and captured computationally. 
+            For example, as a final project, we trained an AI model to predict the relation between two sentences (A and B) to see if one sentence entailed or contradicted the other or if the relation was neutral.
+          </p>
+          <p>
+            The master's program also gave me the flexibility to explore additional interests. I engaged with topics such as <span class="text-highlight">UI/UX design</span> and <span class="text-highlight">speech science</span>, including the analysis of human speech and speech impairments. For example, I created a case study on Hypokinetic Dysarthria, where I propose analysis using different acoustic measurements.
+          </p>
         </div>
       </div>
 
-      <div id="skills">
-
-        <div class="transition"></div>
+      <div id="skills" class="section">
         
-        <h1 class="section-title">Skills</h1>
+        <h1>Skills</h1>
         <h4 class="section-description">Hover over each bar to find out more</h4>
 
         
@@ -160,8 +333,10 @@
               <span>2024</span>
               <span>2025</span>
               <span>2026</span>
+              <span></span>
             </div>
             <div class="axis-labels">
+              <span>|</span>
               <span>|</span>
               <span>|</span>
               <span>|</span>
@@ -174,88 +349,171 @@
           <div id="skills-content">
             <div id="skills-python" class="skill">
               <i class="devicon-python-plain colored"></i>
-              <div class="exp-bar" data-width="100"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="100"></div>
+              </div>
             </div>
+            
             <div id="skills-bash" class="skill">
               <i class="devicon-bash-plain colored"></i>
-              <div class="exp-bar" data-width="95"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="90"></div>
+              </div>
             </div>
+            
             <div id="skills-html" class="skill">
               <i class="devicon-html5-plain colored"></i>
-              <div class="exp-bar" data-width="85"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="90"></div>
+              </div>
             </div>
+            
             <div id="skills-css" class="skill">
               <i class="devicon-css3-plain colored"></i>
-              <div class="exp-bar" data-width="85"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="90"></div>
+              </div>
             </div>
+            
             <div id="skills-js" class="skill">
               <i class="devicon-javascript-plain colored"></i>
-              <div class="exp-bar" data-width="82"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="88"></div>
+              </div>
             </div>
+            
             <div id="skills-php" class="skill">
               <i class="devicon-php-plain colored"></i>
-              <div class="exp-bar" data-width="70"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="80"></div>
+              </div>
             </div>
+            
             <div id="skills-mysql" class="skill">
-              <i class="devicon-mysql-original colored"></i>
-              <div class="exp-bar" data-width="70"></div>
+              <i class="devicon-mysql-plain colored"></i>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="80"></div>
+              </div>
             </div>
+            
+            <div id="skills-r" class="skill">
+              <i class="devicon-r-plain colored"></i>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="50"></div>
+              </div>
+            </div>
+            
             <div id="skills-typescript" class="skill">
               <i class="devicon-typescript-plain colored"></i>
-              <div class="exp-bar" data-width="65"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="65"></div>
+              </div>
             </div>
-            <div id="skills-angular" class="skill">
-              <i class="devicon-angular-plain"></i>
-              <div class="exp-bar" data-width="10"></div>
-            </div>
+            
             <div id="skills-prolog" class="skill">
               <i class="devicon-prolog-plain colored"></i>
-              <div class="exp-bar" data-width="5"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="5"></div>
+              </div>
             </div>
+            
+            <div id="skills-angular" class="skill">
+              <i class="devicon-angular-plain"></i>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="5"></div>
+              </div>
+            </div>
+            
             <div id="skills-react" class="skill">
               <i class="devicon-react-plain colored"></i>
-              <div class="exp-bar" data-width="50"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="35"></div>
+              </div>
             </div>
+
             <div id="skills-java" class="skill">
               <i class="devicon-java-plain colored"></i>
-              <div class="exp-bar" data-width="45"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="30"></div>
+              </div>
             </div>
-            <div id="skills-spring" class="skill">
-              <i class="devicon-spring-plain colored"></i>
-              <div class="exp-bar" data-width="30"></div>
-            </div>
+
             <div id="skills-laravel" class="skill">
               <i class="devicon-laravel-plain colored"></i>
-              <div class="exp-bar" data-width="25"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="15"></div>
+              </div>
             </div>
+
+            <div id="skills-docker" class="skill">
+              <i class="devicon-docker-plain colored"></i>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="15"></div>
+              </div>
+            </div>
+
             <div id="skills-csharp" class="skill">
               <i class="devicon-csharp-plain colored"></i>
-              <div class="exp-bar" data-width="20"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="13"></div>
+              </div>
             </div>
+
             <div id="skills-dotnet" class="skill">
               <i class="devicon-dot-net-plain colored"></i>
-              <div class="exp-bar" data-width="20"></div>
+              <div class="exp-bar-container">
+                <div class="exp-bar" data-width="13"></div>
+              </div>
             </div>
+
           </div>
         </div>
         <div id="skill-tooltip"></div>
       </div>
+    </div>
 
-      <div id="education"></div>
-      <h1 class="section-title">Education</h1>
+    <div id="card-details" class="hidden">
 
-  </body>
+      <div id="tweet-emotion-classifier-details">
+        <div class="details-container">
+          <div class="details-info">
+            <h1>TWEET EMOTION CLASSIFIER</h1>
+            <p>
+              Small project to familiarize us with basic classification and feature extraction methods, 
+              as well as calculating Cohen's kappa-score for inter-annotator agreement.
+            </p>
+          </div>
+          <div class="details-media">
+          </div>
+        </div>
+        <a href="https://github.com/falberts/Uni-projects/tree/main/sentiment-analysis" target="_blank" class="details-gh-link"><i class="devicon-github-original"></i></a>
+      </div>
 
-   <footer>
-    <div class="contact-info">
-      <h4>Contact</h4>
-      <ul>
-        <li>Flor Alberts</li>
-        <li><a href="https://github.com/falberts" target="_blank"><i class="devicon-github-original"></i> github.com/falberts</a></li>
-        <li><a href="https://www.linkedin.com/in/floralberts/" target="_blank"><i class="devicon-linkedin-plain"></i> linkedin.com/in/floralberts</a></li>
-        <li><a href="mailto:flor.alberts@gmail.com"><i class="bi bi-envelope-fill"></i> flor.alberts@gmail.com</a></li>
-      </ul>
+      <div id="screenplay-parser-details">
+        <div class="details-container">
+          <div class="details-info">
+            <h1>SCREENPLAY PARSER</h1>
+            <p>
+              PROJECT INFO
+            </p>
+          </div>
+          <div class="details-media">
+          </div>
+        </div>
+        <a href="https://github.com/falberts/Uni-projects/tree/main/script-parser" target="_blank" class="details-gh-link"><i class="devicon-github-original"></i></a>
+      </div>
 
     </div>
-  </footer> 
+
+    <footer>
+      <div class="contact-info">
+        <ul>
+          <h2>Contact</h2>
+          <li><a href="https://github.com/falberts" target="_blank"><i class="devicon-github-original"></i> github.com/falberts</a></li>
+          <li><a href="https://www.linkedin.com/in/floralberts/" target="_blank"><i class="devicon-linkedin-plain"></i> linkedin.com/in/floralberts</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
 </html>
