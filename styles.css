@@ -25,6 +25,7 @@ body {
 }
 
 a {
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -294,6 +295,11 @@ li, li *{
   text-align: justify;
   width: 80%;
   margin: 2rem auto;
+}
+
+#education a {
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 /* -----------------------------

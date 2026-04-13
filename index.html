@@ -236,7 +236,7 @@
               </div>
             </div>
             
-            <div class="card personal" id="kanban-board">
+            <!-- <div class="card personal" id="kanban-board">
               <h5>PERSONAL PROJECT</h5>
               <h3>KANBAN BOARD APP</h3>
               <h5>2026</h5>
@@ -253,7 +253,7 @@
                 <i class="devicon-github-original" title="GitHub"></i>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -292,10 +292,10 @@
             My studies also included <span class="text-highlight">computational linguistics</span> and <span class="text-highlight">language technology</span>, where I explored parsing techniques and the intersection of language and computation. Additionally, I took part in courses on <span class="text-highlight">digital humanities, information security and encryption, machine translation, and the ethics of AI and NLP</span>. This broadened my understanding of the impact of AI tools in societal contexts, and on the ethical implications. 
           </p>
 
-          <h4>MINOR: NEUROSCIENCE</h4>
+          <h4>BACHELOR THESIS</h4>
 
           <p>
-            PLACEHOLDER TEXT
+            For my Bachelor thesis, I used several <span class="text-highlight">open-source Large Language Models</span> to generate summaries of <span class="text-highlight">biomedical literature</span>, utilizing various <span class="text-highlight">prompting techniques and settings</span> (zero-shot, article-top, article-all, article-all+explanation). I then performed <span class="text-highlight">automated (BERTScore) and manual evaluation</span> to assess the quality of the generated summaries. I concluded that one-shot prompting on average led to the most factual summaries, and that automated evaluation does not align with human judgement. More information can be found on <a href="https://github.com/falberts/BachelorThesis" target="_blank">GitHub</a>. 
           </p>
 
         </div>
@@ -325,6 +325,14 @@
           <p>
             The master's program also gave me the flexibility to explore additional interests. I engaged with topics such as <span class="text-highlight">UI/UX design</span> and <span class="text-highlight">speech science</span>, including the analysis of human speech and speech impairments. For example, I created a case study on Hypokinetic Dysarthria, where I propose analysis using different acoustic measurements.
           </p>
+
+          <h4>MASTER THESIS</h4>
+
+          <p>
+            For my thesis, I focused on the task of <span class="text-highlight">(Neural) Entity Linking (EL)</span> for dutch text. This task consists of two main steps, namely <span class="text-highlight">Named Entity Recognition (NER)</span> and <span class="text-highlight">Named Entity Disambiguation (NED)</span>. NER involves recognizing named entities such as locations, persons and organizations in raw input text and labeling them as entities. NED is the task of disambiguating these entities to the correct entry in a <span class="text-highlight">structured knowledge base</span> (in my case, a corresponding Dutch Wikipedia page ID). 
+            To achieve this, I adapted the code from the existing English <a href="https://github.com/shavarani/SpEL" target="_blank">SpEL Entity Linking model</a> (<a href="https://aclanthology.org/2023.emnlp-main.686/" target="_blank">Shavarani and Sarkar, 2023</a>) and trained it on Dutch training data that I extracted from a Dutch Wikipedia dump, as well as existing training data from the Dutch part of the <a href="https://github.com/Babelscape/multinerd" target="_blank">MultiNERD</a> dataset, which I also used for evaluation. The resulting model, which I dubbed <span class="text-highlight">NLSpEL</span>, achieves competitive performance with state-of-the-art multilingual EL systems (mention detection F1 of 81.5%, entity linking F1 of 71.5%). The model as well as the training data can be accessed on <a href="https://github.com/falberts/NLSpEL" target="_blank">GitHub</a>.
+          </p>
+
         </div>
       </div>
 
@@ -505,7 +513,11 @@
           <div class="details-info">
             <h1>SCREENPLAY PARSER</h1>
             <p>
-              PROJECT INFO
+              Python tool to parse screenplay text files and automatically identify structural elements 
+              like scene headings, action, and dialogue. It utilizes regular expressions to categorize each 
+              line into specific types, such as character names, transitions, or descriptions. Users can 
+              process the input screenplays to generate nicely labeled output, extract specific dialogue 
+              with character attribution, or retrieve a disctionary of line assignments.
             </p>
           </div>
           <div class="details-media">

@@ -72,7 +72,7 @@ function initCardSelect() {
               <div class="details-info">
                 <h1>PROJECT</h1>
                 <p>
-                  Item not found.
+                  Project info will be added shortly.
                 </p>
               </div>
               <div class="details-media">
