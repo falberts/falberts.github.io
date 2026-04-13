@@ -121,6 +121,7 @@ li, li *{
 }
 .section {
   margin: 2rem 0;
+  scroll-margin-top: 10rem;
 }
     
 /* -----------------------------
