@@ -83,6 +83,11 @@ function initCardSelect() {
       `;
 
       detail.classList.add('active');
+
+      content.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
     });
   });
 
