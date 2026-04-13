@@ -297,7 +297,7 @@ li, li *{
   margin: 2rem auto;
 }
 
-#education a {
+#education a, .details-link {
   font-weight: 400;
   text-decoration: underline;
 }
